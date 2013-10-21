@@ -1,4 +1,16 @@
 CSVS::Application.routes.draw do
+  resources :vote_types
+
+  resources :issues
+
+  resources :voting_summaries
+
+  resources :vote_issues
+
+  resources :votes
+
+  resources :services
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
