@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Client:</b>
+  <%= @vote.client_id %>
+</p>
+
+<p>
+  <b>Vote type:</b>
+  <%= @vote.vote_type_id %>
+</p>
+
+<p>
+  <b>Service type:</b>
+  <%= @vote.service_type_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_vote_path(@vote) %> |
+<%= link_to 'Back', votes_path %>

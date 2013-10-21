@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  client_id: MyString
+  vote_type_id: 1
+  service_type_id: 1
+
+two:
+  client_id: MyString
+  vote_type_id: 1
+  service_type_id: 1

@@ -1,0 +1,23 @@
+<h1>Listing vote_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vote_types.each do |vote_type| %>
+  <tr>
+    <td><%= vote_type.name %></td>
+    <td><%= link_to 'Show', vote_type %></td>
+    <td><%= link_to 'Edit', edit_vote_type_path(vote_type) %></td>
+    <td><%= link_to 'Destroy', vote_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vote type', new_vote_type_path %>
