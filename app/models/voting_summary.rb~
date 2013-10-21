@@ -1,4 +1,0 @@
-class VotingSummary < ActiveRecord::Base
-	belongs_to	:service
-	has_many 	:vote
-end
