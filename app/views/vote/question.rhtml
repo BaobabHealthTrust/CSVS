@@ -1,0 +1,14 @@
+<form action="store_vote_type" method="post">
+<center><h1>ARE YOU SATISFIES WITH THE SERVICE YOU HAVE JUST RECEIVED?</h1></center>
+
+<center><table>
+<tr>
+	<td></td>
+</tr>
+<% @voteType.each do |voteType|%>
+	<tr>
+		<td><h2><input type="radio" name="vote_type" value="<%= voteType.name %>"><%= voteType.name %></input></h2></td>
+	</tr>
+<% end %></table>
+<input type="submit" value="Submit"/>
+</form>

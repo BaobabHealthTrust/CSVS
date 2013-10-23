@@ -1,0 +1,6 @@
+<form action="create" method="post">
+	<h4>Enter Service Name</h4>
+	Service name: 
+	<input type="text" name="service"/><br />
+	<input type="submit" value="Submit"/>
+</form>

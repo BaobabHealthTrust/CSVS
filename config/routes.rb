@@ -1,5 +1,7 @@
 CSVS::Application.routes.draw do
-  resources :vote_types
+ 
+ root :to => "service#index"
+ resources :vote_types
 
   resources :issues
 
@@ -11,8 +13,27 @@ CSVS::Application.routes.draw do
 
   resources :services
 
+	
+  get "service/new"
+  post "service/create"
+  get "service/index"
+  get "Vote/question"
+  get "voteType/new"
+  post "voteType/create"
+  post "Vote/create"
+  get  "issue/new"
+  post "issue/create"
+  get "Vote/issue_description"
+  post "Vote/store_vote_type"
+  post "service/create_variables"
+  post "Vote/question"
+  post  "Vote/finish"
+  #map.service '/service', :controller => 'Vote', :action => 'location'
+  #map.Vote '/Vote', :controller => 'Vote', :action => 'store_vote_type'
+  #map.Vote '/Vote', :controller => 'Vote', :action => 'issue_description'
+  
   # The priority is based upon order of creation:
-  # first created -> highest priority.
+  # first created -> highest priority. 
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

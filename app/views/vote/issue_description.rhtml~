@@ -1,0 +1,14 @@
+<form action="create" method="post">
+<center><h1>SPECIFY THE REASON FOR YOUR ANSWER</h1></center>
+
+<center><table>
+<tr>
+	<td></td>
+</tr>
+<% @issue.each do |issue|%>
+	<tr>
+		<td><h2><input type="checkbox" name="" value="<%= issue.name %>"><%= issue.name %></input></h2></td>
+	</tr>
+<% end %></table>
+<input type="submit" value="Submit"/>
+</form>

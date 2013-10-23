@@ -14,7 +14,7 @@ class IssueController < ApplicationController
 	
 	def new
 
-		
+		redirect_to :action => "list"
 	end
 
 	def list

@@ -1,0 +1,20 @@
+<form action="/service/create_variables" method="post">
+<center><h1>CHOSE A SERVICE</h1></center>
+
+<center><table>
+<tr>
+	<td></td>
+</tr>
+<% @service.each do |service|%>
+	<tr>
+		<td>
+			<h2><input type="radio" name="service" value="<%= service.name %>">
+					<%= service.name %>
+				</input>
+			</h2>
+	   </td>
+
+	</tr>
+<% end %></table>
+<input type="submit" value="Submit"/>
+</form>
