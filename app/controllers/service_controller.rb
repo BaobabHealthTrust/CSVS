@@ -8,6 +8,8 @@ class ServiceController < ApplicationController
 	end
 	
 	def create
+		
+		#creating services to be used
 		name = params[:service]
 		service = Service.new
 		service.name = name
@@ -26,6 +28,7 @@ class ServiceController < ApplicationController
 	end
 
 	def destroy
+		#not tested by wanted to implement destroy servidce
 		Service.find(params[:service_id]).destroy
 		redirect_to :action => 'index'
 	end
