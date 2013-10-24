@@ -29,11 +29,12 @@ class VoteController < ApplicationController
 	end
 
     def save_vote
-
+		
+        issues = params[:issues]
 		#raise params.to_yaml
 		vote = Vote.new
 		
-		vote.client_id =  6  #the value  is a testing static value which should be replaced by a hashed string from client
+		vote.client_id =  7 #the value  is a testing static value which should be replaced by a hashed string from client
 			
 			
         vote.vote_type_id =  VoteType.find_by_name(params[:vote_type]).id
@@ -41,8 +42,20 @@ class VoteController < ApplicationController
 		
          
 	    if vote.save
-		a= Vote.find(1,7)  #just trying to chech is the values are entering ther database
-			raise a.to_yaml
+
+            vote_id = Vote.last.id
+			
+			issues.each do |issue|
+			
+				issue_id = Issue.find_by_name(issue).id
+			
+				vote_issue = VoteIssue.new
+				
+				vote_issue.vote_id = vote_id
+				vote_issue.issue_id = issue_id
+				vote_issue.save
+
+			end			
 			
         #if the save then give a thanks massage then redirect to welcome page.
         else
