@@ -1,0 +1,1773 @@
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mService Load (0.6ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`service_id` = 2 LIMIT 1
+  [1m[36mService Load (0.7ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`service_id` = 100 LIMIT 1[0m
+  [1m[35mService Load (0.6ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`service_id` = 5 LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mService Load (0.6ms)[0m  [1mSELECT `services`.* FROM `services` LIMIT 1[0m
+  [1m[35mService Load (0.7ms)[0m  SELECT `services`.* FROM `services` ORDER BY services.service_id DESC LIMIT 1
+  [1m[36mService Load (0.4ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'OPD' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.7ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mService Load (0.5ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`service_id` IN (1, 4)
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`service_id` IN (1, 4)[0m
+  [1m[35mService Load (0.6ms)[0m  SELECT `services`.* FROM `services`
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'OPD' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.7ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 08:51:53 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[36mService Load (0.8ms)[0m  [1mSELECT `services`.* FROM `services`[0m
+Rendered service/index.rhtml within layouts/application (1.9ms)
+Completed 200 OK in 63ms (Views: 5.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 08:51:57 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"OPD"}
+Redirected to http://localhost:3000/Vote/question?service_type=OPD
+Completed 302 Found in 2ms
+
+
+Started GET "/Vote/question?service_type=OPD" for 127.0.0.1 at Thu Oct 24 08:51:57 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:34: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 08:52:13 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"OPD"}
+Redirected to http://localhost:3000/Vote/question?service_type=OPD
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=OPD" for 127.0.0.1 at Thu Oct 24 08:52:13 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:34: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 08:56:18 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"OPD"}
+Redirected to http://localhost:3000/Vote/question?service_type=OPD
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=OPD" for 127.0.0.1 at Thu Oct 24 08:56:18 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:34: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 08:57:34 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Theatre"}
+Redirected to http://localhost:3000/Vote/question?service_type=Theatre
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Theatre" for 127.0.0.1 at Thu Oct 24 08:57:34 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Theatre"}
+  [1m[35mVoteType Load (0.3ms)[0m  SELECT `vote_types`.* FROM `vote_types`
+Rendered vote/question.rhtml within layouts/application (5.3ms)
+Completed 200 OK in 29ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 08:58:14 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Theatre"}
+Redirected to http://localhost:3000/Vote/question?service_type=Theatre
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Theatre" for 127.0.0.1 at Thu Oct 24 08:58:14 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Theatre"}
+  [1m[36mVoteType Load (0.2ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (6.1ms)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 08:58:16 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Theatre", "answers"=>"A BIT SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Theatre&vote_type=A+BIT+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Theatre&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 08:58:16 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Theatre", "vote_type"=>"A BIT SATISFIED"}
+  [1m[35mIssue Load (0.4ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (6.5ms)
+Completed 200 OK in 30ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 08:58:19 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Theatre", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&service_type=Theatre&vote_type=A+BIT+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&service_type=Theatre&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 08:58:19 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Theatre", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS"]}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `end' for #<ActiveSupport::HashWithIndifferentAccess:0x7f9432d74740>):
+  app/controllers/vote_controller.rb:32:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 09:21:34 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services`[0m
+Rendered service/index.rhtml within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 09:22:10 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Maternity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Maternity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Maternity" for 127.0.0.1 at Thu Oct 24 09:22:10 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Maternity"}
+  [1m[35mVoteType Load (0.2ms)[0m  SELECT `vote_types`.* FROM `vote_types`
+Rendered vote/question.rhtml within layouts/application (6.1ms)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 09:22:17 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Maternity", "answers"=>"SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Maternity&vote_type=SATISFIED
+Completed 302 Found in 2ms
+
+
+Started GET "/Vote/issue_description?service_type=Maternity&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 09:22:17 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"SATISFIED"}
+  [1m[36mIssue Load (0.1ms)[0m  [1mSELECT `issues`.* FROM `issues`[0m
+Rendered vote/issue_description.rhtml within layouts/application (5.1ms)
+Completed 200 OK in 16ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 09:22:24 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"SATISFIED", "issues"=>["HARSH NURSES", "HARSH DOCTORS", "DELAY TREATMENT"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+NURSES&issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Maternity&vote_type=SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+NURSES&issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Maternity&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 09:22:24 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"SATISFIED", "issues"=>["HARSH NURSES", "HARSH DOCTORS", "DELAY TREATMENT"]}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `end' for #<ActiveSupport::HashWithIndifferentAccess:0x7f94330c1f88>):
+  app/controllers/vote_controller.rb:32:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/Vote/issue_description?service_type=Maternity&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 09:24:04 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:37: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/Vote/question?service_type=Maternity" for 127.0.0.1 at Thu Oct 24 09:24:08 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:37: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/Vote/question?service_type=Maternity" for 127.0.0.1 at Thu Oct 24 09:24:50 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Maternity"}
+  [1m[35mVoteType Load (0.2ms)[0m  SELECT `vote_types`.* FROM `vote_types`
+Rendered vote/question.rhtml within layouts/application (4.5ms)
+Completed 200 OK in 14ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Vote/question?service_type=Maternity" for 127.0.0.1 at Thu Oct 24 09:24:52 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Maternity"}
+  [1m[36mVoteType Load (0.2ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (4.8ms)
+Completed 200 OK in 14ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 09:24:56 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Maternity", "answers"=>"SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Maternity&vote_type=SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Maternity&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 09:24:56 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"SATISFIED"}
+  [1m[35mIssue Load (0.6ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (45.6ms)
+Completed 200 OK in 55ms (Views: 48.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 09:25:00 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"SATISFIED", "issues"=>["HARSH NURSES"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+NURSES&service_type=Maternity&vote_type=SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+NURSES&service_type=Maternity&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 09:25:00 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"SATISFIED", "issues"=>["HARSH NURSES"]}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (--- SATISFIED
+):
+  app/controllers/vote_controller.rb:33:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mService Load (0.6ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'MARTENITY' LIMIT 1[0m
+  [1m[35mService Load (0.7ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'OPD' LIMIT 1
+  [1m[36mService Load (0.7ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'params[:service]' LIMIT 1[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'params[:service]' LIMIT 1
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'martenity' LIMIT 1[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'martenity' LIMIT 1
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&service_type=Theatre&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:45:21 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Theatre", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS"]}
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+Completed 500 Internal Server Error in 88ms
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+
+NoMethodError (undefined method `Service' for #<Class:0x7f9432cf2b78>):
+  app/controllers/vote_controller.rb:32:in `save_vote'
+
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/Vote" for 127.0.0.1 at Thu Oct 24 09:45:36 +0200 2013
+
+ActionController::RoutingError (No route matches "/Vote"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 09:45:42 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 4.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 09:45:46 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"OPD"}
+Redirected to http://localhost:3000/Vote/question?service_type=OPD
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=OPD" for 127.0.0.1 at Thu Oct 24 09:45:46 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"OPD"}
+  [1m[36mVoteType Load (0.1ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (4.9ms)
+Completed 200 OK in 54ms (Views: 8.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 09:45:49 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"OPD", "answers"=>"SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=OPD&vote_type=SATISFIED
+Completed 302 Found in 2ms
+
+
+Started GET "/Vote/issue_description?service_type=OPD&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 09:45:49 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"OPD", "vote_type"=>"SATISFIED"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (4.7ms)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 09:45:51 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"OPD", "vote_type"=>"SATISFIED", "issues"=>["HARSH DOCTORS"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&service_type=OPD&vote_type=SATISFIED
+Completed 302 Found in 2ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&service_type=OPD&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 09:45:51 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"OPD", "vote_type"=>"SATISFIED", "issues"=>["HARSH DOCTORS"]}
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+Completed 500 Internal Server Error in 8ms
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+
+NoMethodError (undefined method `Service' for #<Class:0x7f9432f75300>):
+  app/controllers/vote_controller.rb:32:in `save_vote'
+
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 09:46:56 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 09:47:00 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Martenity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Martenity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 09:47:00 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Martenity"}
+  [1m[36mVoteType Load (0.2ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (4.9ms)
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 09:47:02 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Martenity", "answers"=>"A BIT SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Martenity&vote_type=A+BIT+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Martenity&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:47:02 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"A BIT SATISFIED"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (4.9ms)
+Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 09:47:06 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"A BIT SATISFIED", "issues"=>["DELAY TREATMENT", "POOR FOOD QUALITY"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=DELAY+TREATMENT&issues[]=POOR+FOOD+QUALITY&service_type=Martenity&vote_type=A+BIT+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=DELAY+TREATMENT&issues[]=POOR+FOOD+QUALITY&service_type=Martenity&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:47:06 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"A BIT SATISFIED", "issues"=>["DELAY TREATMENT", "POOR FOOD QUALITY"]}
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+Completed 500 Internal Server Error in 7ms
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+
+NoMethodError (undefined method `Service' for #<Class:0x7f9432e1fc58>):
+  app/controllers/vote_controller.rb:32:in `save_vote'
+
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 09:48:59 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 09:49:03 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Theatre"}
+Redirected to http://localhost:3000/Vote/question?service_type=Theatre
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Theatre" for 127.0.0.1 at Thu Oct 24 09:49:03 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Theatre"}
+  [1m[36mVoteType Load (0.4ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (5.3ms)
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 09:49:06 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Theatre", "answers"=>"A BIT SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Theatre&vote_type=A+BIT+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Theatre&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:49:06 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Theatre", "vote_type"=>"A BIT SATISFIED"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (7.3ms)
+Completed 200 OK in 20ms (Views: 14.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 09:49:11 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Theatre", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT", "POOR FOOD QUALITY"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&issues[]=POOR+FOOD+QUALITY&service_type=Theatre&vote_type=A+BIT+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&issues[]=POOR+FOOD+QUALITY&service_type=Theatre&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:49:11 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Theatre", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT", "POOR FOOD QUALITY"]}
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+Completed 500 Internal Server Error in 8ms
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+
+NoMethodError (undefined method `Service' for #<Class:0x7f94330c8658>):
+  app/controllers/vote_controller.rb:32:in `save_vote'
+
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` LIMIT 1[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'OPD' LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 09:52:46 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.8ms)
+Completed 200 OK in 12ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 09:52:59 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Martenity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Martenity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 09:52:59 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Martenity"}
+  [1m[36mVoteType Load (0.2ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (4.9ms)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 09:53:01 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Martenity", "answers"=>"ATLEAST SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Martenity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Martenity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:53:02 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (4.8ms)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 09:53:06 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:53:06 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` IS NULL LIMIT 1
+Completed 500 Internal Server Error in 8ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/vote_controller.rb:32:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 09:53:55 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[36mService Load (0.4ms)[0m  [1mSELECT `services`.* FROM `services`[0m
+Rendered service/index.rhtml within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 09:54:00 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Martenity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Martenity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 09:54:00 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Martenity"}
+  [1m[35mVoteType Load (0.2ms)[0m  SELECT `vote_types`.* FROM `vote_types`
+Rendered vote/question.rhtml within layouts/application (4.6ms)
+Completed 200 OK in 12ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 09:54:02 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Martenity", "answers"=>"A BIT SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Martenity&vote_type=A+BIT+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Martenity&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:54:02 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"A BIT SATISFIED"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT `issues`.* FROM `issues`[0m
+Rendered vote/issue_description.rhtml within layouts/application (4.8ms)
+Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 09:54:05 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=A+BIT+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:54:05 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (--- !map:ActiveSupport::HashWithIndifferentAccess 
+action: save_vote
+service_type: Martenity
+vote_type: A BIT SATISFIED
+issues: 
+- HARSH DOCTORS
+- DELAY TREATMENT
+controller: Vote
+):
+  app/controllers/vote_controller.rb:32:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.7ms)
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:55:00 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+Completed 500 Internal Server Error in 0ms
+
+RuntimeError (--- 
+):
+  app/controllers/vote_controller.rb:32:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:55:30 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (--- !map:ActiveSupport::HashWithIndifferentAccess 
+action: save_vote
+service_type: Martenity
+vote_type: A BIT SATISFIED
+issues: 
+- HARSH DOCTORS
+- DELAY TREATMENT
+controller: Vote
+):
+  app/controllers/vote_controller.rb:32:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:57:37 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (--- Martenity
+):
+  app/controllers/vote_controller.rb:32:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:59:02 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+  [1m[35mService Load (0.6ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'Martenity' LIMIT 1
+Completed 500 Internal Server Error in 14ms
+
+RuntimeError (--- 6
+):
+  app/controllers/vote_controller.rb:35:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 09:59:05 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"A BIT SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'Martenity' LIMIT 1[0m
+Completed 500 Internal Server Error in 10ms
+
+RuntimeError (--- 6
+):
+  app/controllers/vote_controller.rb:35:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 10:12:37 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:12:40 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Theatre"}
+Redirected to http://localhost:3000/Vote/question?service_type=Theatre
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Theatre" for 127.0.0.1 at Thu Oct 24 10:12:40 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:37: syntax error, unexpected tIDENTIFIER, expecting kEND
+		vote.client_id =  1s.[@S
+		                    ^):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:13:10 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Martenity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Martenity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 10:13:10 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:37: syntax error, unexpected tIDENTIFIER, expecting kEND
+		vote.client_id =  1s.[@S
+		                    ^):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:14:09 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Martenity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Martenity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 10:14:09 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:37: syntax error, unexpected tIDENTIFIER, expecting kEND
+		a = 1s.[@S
+		      ^):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (41.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.6ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:14:35 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Martenity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Martenity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 10:14:35 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:37: syntax error, unexpected tIDENTIFIER, expecting kEND
+		a = 1s[@S
+		      ^
+/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting ']'
+		vote.client_id =  a
+		    ^):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:14:57 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Martenity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Martenity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 10:14:57 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:37: syntax error, unexpected tIDENTIFIER, expecting kEND
+		a = 1s[@S
+		      ^
+/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting ']'
+		vote.client_id =  a
+		    ^):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 10:15:29 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:37: syntax error, unexpected tIDENTIFIER, expecting kEND):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 10:16:05 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Martenity"}
+  [1m[36mVoteType Load (0.1ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (6.0ms)
+Completed 200 OK in 15ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 10:16:08 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Martenity"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Martenity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 10:16:08 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Martenity"}
+  [1m[35mIssue Load (0.4ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (5.3ms)
+Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:16:47 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=" for 127.0.0.1 at Thu Oct 24 10:16:47 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = '' LIMIT 1[0m
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'Martenity' LIMIT 1
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT `votes`.* FROM `votes` WHERE `votes`.`vote_id` = 1 LIMIT 1[0m
+Completed 404 Not Found in 21ms
+
+ActiveRecord::RecordNotFound (Couldn't find Vote with ID=1):
+  app/controllers/vote_controller.rb:42:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=" for 127.0.0.1 at Thu Oct 24 10:18:15 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+  [1m[35mService Load (0.4ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = '' LIMIT 1
+  [1m[36mService Load (0.4ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'Martenity' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mdescribe `votes`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `votes` (`client_id`, `service_id`, `updated_at`, `created_at`, `vote_type_id`) VALUES (1, 6, '2013-10-24 08:18:15', '2013-10-24 08:18:15', 4)
+  [1m[36mSQL (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mVote Load (0.5ms)[0m  SELECT `votes`.* FROM `votes` WHERE `votes`.`vote_id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 203ms
+
+RuntimeError (--- !ruby/object:Vote 
+attributes: 
+  vote_type_id: 4
+  client_id: "1"
+  created_at: 2013-10-24 08:18:15 Z
+  service_id: 6
+  vote_id: 1
+  updated_at: 2013-10-24 08:18:15 Z
+attributes_cache: {}
+
+changed_attributes: {}
+
+destroyed: false
+marked_for_destruction: false
+new_record: false
+previously_changed: {}
+
+readonly: false
+):
+  app/controllers/vote_controller.rb:45:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=" for 127.0.0.1 at Thu Oct 24 10:21:31 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = '' LIMIT 1[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'Martenity' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  describe `votes`
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `votes` (`updated_at`, `vote_type_id`, `created_at`, `client_id`, `service_id`) VALUES ('2013-10-24 08:21:31', 4, '2013-10-24 08:21:31', 2, 6)[0m
+  [1m[35mSQL (47.3ms)[0m  COMMIT
+  [1m[36mVote Load (0.4ms)[0m  [1mSELECT `votes`.* FROM `votes` WHERE `votes`.`vote_id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 78ms
+
+RuntimeError (--- !ruby/object:Vote 
+attributes: 
+  vote_type_id: 4
+  client_id: "1"
+  created_at: 2013-10-24 08:18:15 Z
+  service_id: 6
+  vote_id: 1
+  updated_at: 2013-10-24 08:18:15 Z
+attributes_cache: {}
+
+changed_attributes: {}
+
+destroyed: false
+marked_for_destruction: false
+new_record: false
+previously_changed: {}
+
+readonly: false
+):
+  app/controllers/vote_controller.rb:45:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 10:21:45 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 4.5ms | ActiveRecord: 50.1ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:21:54 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"OPD"}
+Redirected to http://localhost:3000/Vote/question?service_type=OPD
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=OPD" for 127.0.0.1 at Thu Oct 24 10:21:54 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"OPD"}
+  [1m[36mVoteType Load (0.1ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (5.4ms)
+Completed 200 OK in 14ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 10:21:59 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"OPD", "answers"=>"SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=OPD&vote_type=SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=OPD&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 10:21:59 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"OPD", "vote_type"=>"SATISFIED"}
+  [1m[35mIssue Load (0.4ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (5.4ms)
+Completed 200 OK in 15ms (Views: 8.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:22:02 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"OPD", "vote_type"=>"SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=OPD&vote_type=SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=OPD&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 10:22:02 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"OPD", "vote_type"=>"SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'SATISFIED' LIMIT 1[0m
+Completed 500 Internal Server Error in 58ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/vote_controller.rb:39:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 10:23:40 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.9ms)
+Completed 200 OK in 13ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:23:48 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"DENTAL"}
+Redirected to http://localhost:3000/Vote/question?service_type=DENTAL
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=DENTAL" for 127.0.0.1 at Thu Oct 24 10:23:48 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"DENTAL"}
+  [1m[36mVoteType Load (0.4ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (5.5ms)
+Completed 200 OK in 55ms (Views: 8.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 10:23:52 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"DENTAL", "answers"=>"FULLY SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=DENTAL&vote_type=FULLY+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=DENTAL&vote_type=FULLY+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:23:52 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"DENTAL", "vote_type"=>"FULLY SATISFIED"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (4.7ms)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:23:55 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"DENTAL", "vote_type"=>"FULLY SATISFIED", "issues"=>["HARSH DOCTORS"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&service_type=DENTAL&vote_type=FULLY+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&service_type=DENTAL&vote_type=FULLY+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:23:55 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"DENTAL", "vote_type"=>"FULLY SATISFIED", "issues"=>["HARSH DOCTORS"]}
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'FULLY SATISFIED' LIMIT 1[0m
+Completed 500 Internal Server Error in 20ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/vote_controller.rb:39:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 10:26:07 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:26:13 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Martenity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Martenity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 10:26:13 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Martenity"}
+  [1m[36mVoteType Load (0.3ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (4.9ms)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 10:26:16 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Martenity", "answers"=>"ATLEAST SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Martenity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Martenity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:26:16 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (4.9ms)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:26:19 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH DOCTORS"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&service_type=Martenity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&service_type=Martenity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:26:19 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH DOCTORS"]}
+  [1m[36mService Load (0.5ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'ATLEAST SATISFIED' LIMIT 1[0m
+Completed 500 Internal Server Error in 17ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/vote_controller.rb:39:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:30:04 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH DOCTORS"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&service_type=Martenity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&service_type=Martenity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:30:04 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH DOCTORS"]}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (--- !map:ActiveSupport::HashWithIndifferentAccess 
+action: save_vote
+service_type: Martenity
+vote_type: ATLEAST SATISFIED
+issues: 
+- HARSH DOCTORS
+controller: Vote
+):
+  app/controllers/vote_controller.rb:35:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+  [1m[36mVoteType Load (0.6ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types` WHERE `vote_types`.`name` = 'SATISFIED' LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 10:33:58 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:34:02 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Maternity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Maternity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Maternity" for 127.0.0.1 at Thu Oct 24 10:34:02 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Maternity"}
+  [1m[36mVoteType Load (0.1ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (4.6ms)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 10:34:05 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Maternity", "answers"=>"SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Maternity&vote_type=SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Maternity&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 10:34:05 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"SATISFIED"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (5.6ms)
+Completed 200 OK in 15ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Vote/issue_description?service_type=Maternity&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 10:34:29 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"SATISFIED"}
+  [1m[36mIssue Load (0.1ms)[0m  [1mSELECT `issues`.* FROM `issues`[0m
+Rendered vote/issue_description.rhtml within layouts/application (4.7ms)
+Completed 200 OK in 14ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:34:32 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Maternity&vote_type=SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Maternity&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 10:34:32 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+  [1m[35mVoteType Load (0.2ms)[0m  SELECT `vote_types`.* FROM `vote_types` WHERE `vote_types`.`name` = 'SATISFIED' LIMIT 1
+  [1m[36mService Load (0.5ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'Maternity' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mdescribe `votes`[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `votes` (`created_at`, `client_id`, `updated_at`, `service_id`, `vote_type_id`) VALUES ('2013-10-24 08:34:32', 2, '2013-10-24 08:34:32', 2, 18)
+  [1m[36mSQL (52.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mVote Load (0.3ms)[0m  SELECT `votes`.* FROM `votes` WHERE `votes`.`vote_id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 92ms
+
+RuntimeError (--- !ruby/object:Vote 
+attributes: 
+  vote_type_id: 4
+  client_id: "1"
+  created_at: 2013-10-24 08:18:15 Z
+  service_id: 6
+  vote_id: 1
+  updated_at: 2013-10-24 08:18:15 Z
+attributes_cache: {}
+
+changed_attributes: {}
+
+destroyed: false
+marked_for_destruction: false
+new_record: false
+previously_changed: {}
+
+readonly: false
+):
+  app/controllers/vote_controller.rb:48:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 10:35:09 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services`[0m
+Rendered service/index.rhtml within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:35:14 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"SKIN CLINIC"}
+Redirected to http://localhost:3000/Vote/question?service_type=SKIN+CLINIC
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=SKIN+CLINIC" for 127.0.0.1 at Thu Oct 24 10:35:14 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"SKIN CLINIC"}
+  [1m[35mVoteType Load (0.2ms)[0m  SELECT `vote_types`.* FROM `vote_types`
+Rendered vote/question.rhtml within layouts/application (4.9ms)
+Completed 200 OK in 15ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 10:35:22 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"SKIN CLINIC", "answers"=>"A BIT SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=SKIN+CLINIC&vote_type=A+BIT+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=SKIN+CLINIC&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:35:22 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"SKIN CLINIC", "vote_type"=>"A BIT SATISFIED"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT `issues`.* FROM `issues`[0m
+Rendered vote/issue_description.rhtml within layouts/application (4.8ms)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:35:27 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"SKIN CLINIC", "vote_type"=>"A BIT SATISFIED", "issues"=>["POOR SANITATION", "HARSH DOCTORS", "NO MEDICINE"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=POOR+SANITATION&issues[]=HARSH+DOCTORS&issues[]=NO+MEDICINE&service_type=SKIN+CLINIC&vote_type=A+BIT+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=POOR+SANITATION&issues[]=HARSH+DOCTORS&issues[]=NO+MEDICINE&service_type=SKIN+CLINIC&vote_type=A+BIT+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:35:27 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"SKIN CLINIC", "vote_type"=>"A BIT SATISFIED", "issues"=>["POOR SANITATION", "HARSH DOCTORS", "NO MEDICINE"]}
+  [1m[35mVoteType Load (0.4ms)[0m  SELECT `vote_types`.* FROM `vote_types` WHERE `vote_types`.`name` = 'A BIT SATISFIED' LIMIT 1
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`name` = 'SKIN CLINIC' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mdescribe `votes`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `votes` (`updated_at`, `service_id`, `vote_type_id`, `created_at`, `client_id`) VALUES ('2013-10-24 08:35:27', 8, 20, '2013-10-24 08:35:27', 2)
+  [1m[36mSQL (262.6ms)[0m  [1mCOMMIT[0m
+Completed 404 Not Found in 341ms
+
+ActiveRecord::RecordNotFound (Couldn't find Vote without an ID):
+  app/controllers/vote_controller.rb:47:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 10:36:01 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 4.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:36:05 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Martenity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Martenity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 10:36:05 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Martenity"}
+  [1m[36mVoteType Load (0.2ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (4.8ms)
+Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 10:36:08 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Martenity", "answers"=>"ATLEAST SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Martenity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Martenity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:36:08 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (4.9ms)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:36:12 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH NURSES", "DELAY TREATMENT"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+NURSES&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+NURSES&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:36:12 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH NURSES", "DELAY TREATMENT"]}
+  [1m[36mVoteType Load (0.3ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types` WHERE `vote_types`.`name` = 'ATLEAST SATISFIED' LIMIT 1[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'Martenity' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  describe `votes`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `votes` (`client_id`, `updated_at`, `service_id`, `vote_type_id`, `created_at`) VALUES (2, '2013-10-24 08:36:12', 6, 19, '2013-10-24 08:36:12')[0m
+  [1m[35mSQL (55.1ms)[0m  COMMIT
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT `votes`.* FROM `votes` WHERE `votes`.`vote_id` IN (1, 3)[0m
+Completed 500 Internal Server Error in 88ms
+
+RuntimeError (--- 
+- !ruby/object:Vote 
+  attributes: 
+    vote_type_id: 4
+    client_id: "1"
+    created_at: 2013-10-24 08:18:15 Z
+    service_id: 6
+    vote_id: 1
+    updated_at: 2013-10-24 08:18:15 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Vote 
+  attributes: 
+    vote_type_id: 18
+    client_id: "2"
+    created_at: 2013-10-24 08:34:32 Z
+    service_id: 2
+    vote_id: 3
+    updated_at: 2013-10-24 08:34:32 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+):
+  app/controllers/vote_controller.rb:48:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/Vote" for 127.0.0.1 at Thu Oct 24 10:38:48 +0200 2013
+
+ActionController::RoutingError (No route matches "/Vote"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 10:38:52 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.9ms)
+Completed 200 OK in 13ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:38:55 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Maternity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Maternity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Maternity" for 127.0.0.1 at Thu Oct 24 10:38:55 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting kEND
+		vote.client_id =  3c{}/
+		                    ^):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:44:22 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Maternity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Maternity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Maternity" for 127.0.0.1 at Thu Oct 24 10:44:22 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting kEND
+		vote.client_id =  3c{}/
+		                    ^):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:44:40 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Maternity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Maternity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Maternity" for 127.0.0.1 at Thu Oct 24 10:44:40 +0200 2013
+
+SyntaxError (/home/exilenjoka/apps/CSVS/app/controllers/vote_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting kEND):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.6ms)
+
+
+Started GET "/Vote/question?service_type=Maternity" for 127.0.0.1 at Thu Oct 24 10:44:59 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Maternity"}
+  [1m[36mVoteType Load (0.2ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 10:45:02 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Maternity", "answers"=>"ATLEAST SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Maternity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Maternity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:45:02 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"ATLEAST SATISFIED"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (5.0ms)
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:45:06 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH NURSES", "HARSH DOCTORS"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+NURSES&issues[]=HARSH+DOCTORS&service_type=Maternity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+NURSES&issues[]=HARSH+DOCTORS&service_type=Maternity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:45:06 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH NURSES", "HARSH DOCTORS"]}
+  [1m[36mVoteType Load (0.1ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types` WHERE `vote_types`.`name` = 'ATLEAST SATISFIED' LIMIT 1[0m
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'Maternity' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  describe `votes`
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `votes` (`service_id`, `created_at`, `updated_at`, `client_id`, `vote_type_id`) VALUES (2, '2013-10-24 08:45:06', '2013-10-24 08:45:06', 3, 19)[0m
+  [1m[35mSQL (52.1ms)[0m  COMMIT
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT `votes`.* FROM `votes` WHERE `votes`.`vote_id` IN (1, 10)[0m
+Completed 404 Not Found in 128ms
+
+ActiveRecord::RecordNotFound (Couldn't find all Votes with IDs (1, 10) (found 1 results, but was looking for 2)):
+  app/controllers/vote_controller.rb:47:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 10:50:55 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:50:59 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Maternity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Maternity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Maternity" for 127.0.0.1 at Thu Oct 24 10:50:59 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Maternity"}
+  [1m[36mVoteType Load (0.4ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (5.6ms)
+Completed 200 OK in 58ms (Views: 8.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 10:51:02 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Maternity", "answers"=>"ATLEAST SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Maternity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Maternity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:51:02 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"ATLEAST SATISFIED"}
+  [1m[35mIssue Load (0.3ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:51:05 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Maternity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Maternity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:51:05 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Maternity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+  [1m[36mVoteType Load (0.2ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types` WHERE `vote_types`.`name` = 'ATLEAST SATISFIED' LIMIT 1[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'Maternity' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  describe `votes`
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `votes` (`vote_type_id`, `client_id`, `service_id`, `created_at`, `updated_at`) VALUES (19, 5, 2, '2013-10-24 08:51:05', '2013-10-24 08:51:05')[0m
+  [1m[35mSQL (54.1ms)[0m  COMMIT
+  [1m[36mVote Load (0.4ms)[0m  [1mSELECT `votes`.* FROM `votes` WHERE `votes`.`vote_id` IN (1, 10)[0m
+Completed 404 Not Found in 92ms
+
+ActiveRecord::RecordNotFound (Couldn't find all Votes with IDs (1, 10) (found 1 results, but was looking for 2)):
+  app/controllers/vote_controller.rb:47:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 10:51:47 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:51:50 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Theatre"}
+Redirected to http://localhost:3000/Vote/question?service_type=Theatre
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Theatre" for 127.0.0.1 at Thu Oct 24 10:51:50 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Theatre"}
+  [1m[36mVoteType Load (0.3ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (5.1ms)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 10:51:52 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Theatre", "answers"=>"SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Theatre&vote_type=SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Theatre&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 10:51:52 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Theatre", "vote_type"=>"SATISFIED"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (7.1ms)
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:51:56 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Theatre", "vote_type"=>"SATISFIED", "issues"=>["HARSH NURSES", "HARSH DOCTORS"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+NURSES&issues[]=HARSH+DOCTORS&service_type=Theatre&vote_type=SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+NURSES&issues[]=HARSH+DOCTORS&service_type=Theatre&vote_type=SATISFIED" for 127.0.0.1 at Thu Oct 24 10:51:56 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Theatre", "vote_type"=>"SATISFIED", "issues"=>["HARSH NURSES", "HARSH DOCTORS"]}
+  [1m[36mVoteType Load (0.1ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types` WHERE `vote_types`.`name` = 'SATISFIED' LIMIT 1[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'Theatre' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  describe `votes`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `votes` (`created_at`, `updated_at`, `vote_type_id`, `service_id`, `client_id`) VALUES ('2013-10-24 08:51:56', '2013-10-24 08:51:56', 18, 3, 5)[0m
+  [1m[35mSQL (52.8ms)[0m  COMMIT
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT `votes`.* FROM `votes` WHERE `votes`.`vote_id` IN (1, 7)[0m
+Completed 500 Internal Server Error in 131ms
+
+RuntimeError (--- 
+- !ruby/object:Vote 
+  attributes: 
+    vote_type_id: 4
+    client_id: "1"
+    created_at: 2013-10-24 08:18:15 Z
+    service_id: 6
+    vote_id: 1
+    updated_at: 2013-10-24 08:18:15 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Vote 
+  attributes: 
+    vote_type_id: 19
+    client_id: "5"
+    created_at: 2013-10-24 08:51:05 Z
+    service_id: 2
+    vote_id: 7
+    updated_at: 2013-10-24 08:51:05 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+):
+  app/controllers/vote_controller.rb:48:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 24 10:55:13 +0200 2013
+  Processing by ServiceController#index as HTML
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services`
+Rendered service/index.rhtml within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/service/create_variables" for 127.0.0.1 at Thu Oct 24 10:55:16 +0200 2013
+  Processing by ServiceController#create_variables as HTML
+  Parameters: {"service"=>"Martenity"}
+Redirected to http://localhost:3000/Vote/question?service_type=Martenity
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/question?service_type=Martenity" for 127.0.0.1 at Thu Oct 24 10:55:16 +0200 2013
+  Processing by VoteController#question as HTML
+  Parameters: {"service_type"=>"Martenity"}
+  [1m[36mVoteType Load (0.3ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types`[0m
+Rendered vote/question.rhtml within layouts/application (5.6ms)
+Completed 200 OK in 14ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/Vote/store_vote_type" for 127.0.0.1 at Thu Oct 24 10:55:18 +0200 2013
+  Processing by VoteController#store_vote_type as HTML
+  Parameters: {"service_type"=>"Martenity", "answers"=>"ATLEAST SATISFIED"}
+Redirected to http://localhost:3000/Vote/issue_description?service_type=Martenity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/issue_description?service_type=Martenity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:55:18 +0200 2013
+  Processing by VoteController#issue_description as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT `issues`.* FROM `issues`
+Rendered vote/issue_description.rhtml within layouts/application (4.7ms)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/Vote/finish" for 127.0.0.1 at Thu Oct 24 10:55:21 +0200 2013
+  Processing by VoteController#finish as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+Redirected to http://localhost:3000/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=ATLEAST+SATISFIED
+Completed 302 Found in 1ms
+
+
+Started GET "/Vote/save_vote?issues[]=HARSH+DOCTORS&issues[]=DELAY+TREATMENT&service_type=Martenity&vote_type=ATLEAST+SATISFIED" for 127.0.0.1 at Thu Oct 24 10:55:21 +0200 2013
+  Processing by VoteController#save_vote as HTML
+  Parameters: {"service_type"=>"Martenity", "vote_type"=>"ATLEAST SATISFIED", "issues"=>["HARSH DOCTORS", "DELAY TREATMENT"]}
+  [1m[36mVoteType Load (0.2ms)[0m  [1mSELECT `vote_types`.* FROM `vote_types` WHERE `vote_types`.`name` = 'ATLEAST SATISFIED' LIMIT 1[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`name` = 'Martenity' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  describe `votes`
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `votes` (`updated_at`, `created_at`, `service_id`, `client_id`, `vote_type_id`) VALUES ('2013-10-24 08:55:21', '2013-10-24 08:55:21', 6, 6, 19)[0m
+  [1m[35mSQL (56.8ms)[0m  COMMIT
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT `votes`.* FROM `votes` WHERE `votes`.`vote_id` IN (1, 7)[0m
+Completed 500 Internal Server Error in 96ms
+
+RuntimeError (--- 
+- !ruby/object:Vote 
+  attributes: 
+    vote_type_id: 4
+    client_id: "1"
+    created_at: 2013-10-24 08:18:15 Z
+    service_id: 6
+    vote_id: 1
+    updated_at: 2013-10-24 08:18:15 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Vote 
+  attributes: 
+    vote_type_id: 19
+    client_id: "5"
+    created_at: 2013-10-24 08:51:05 Z
+    service_id: 2
+    vote_id: 7
+    updated_at: 2013-10-24 08:51:05 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+):
+  app/controllers/vote_controller.rb:45:in `save_vote'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
