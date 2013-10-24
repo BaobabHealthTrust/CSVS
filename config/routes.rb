@@ -28,6 +28,7 @@ CSVS::Application.routes.draw do
   post "service/create_variables"
   post "Vote/question"
   post  "Vote/finish"
+  get	"Vote/save_vote"
   #map.service '/service', :controller => 'Vote', :action => 'location'
   #map.Vote '/Vote', :controller => 'Vote', :action => 'store_vote_type'
   #map.Vote '/Vote', :controller => 'Vote', :action => 'issue_description'

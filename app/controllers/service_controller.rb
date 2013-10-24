@@ -31,7 +31,7 @@ class ServiceController < ApplicationController
 	end
 
 	def create_variables
-		session[:service_type] = params[:service]
-		redirect_to :controller=>"Vote", :action=>"question"
+		#session[:service_type] = params[:service]
+		redirect_to :controller=>"Vote", :action=>"question", :service_type => params[:service]
 	end
 end
