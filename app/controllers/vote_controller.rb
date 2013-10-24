@@ -55,8 +55,8 @@ class VoteController < ApplicationController
 				vote_issue.issue_id = issue_id
 				vote_issue.save
 
-			end			
-			
+				end			
+			redirect_to :controller=>"service", :action=>"index"
         #if the save then give a thanks massage then redirect to welcome page.
         else
            #if not save, take the user back to choising a service page.
