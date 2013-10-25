@@ -1,4 +1,26 @@
-<form action="store_vote_type" method="post">
+<script>
+function validateForm()
+{
+var radio_buttons = document.forms["question"]["answers"];
+var checked = false;
+for (i=0; i<radio_buttons.length; i++){
+	if (radio_buttons[i].checked == true){
+		checked = true;
+		break;
+	}
+}
+if (!checked)
+  {
+  alert("you must select your favorite answer");
+  return false;
+  }
+
+}
+</script>
+
+
+
+<form name = "question" action="store_vote_type" onsubmit="return validateForm()" method="post">
 <center><h1>ARE YOU SATISFIES WITH THE SERVICE YOU HAVE JUST RECEIVED?</h1></center>
 
 <center><table>

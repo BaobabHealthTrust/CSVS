@@ -1,4 +1,26 @@
-<form action="finish" method="post">
+
+<script>
+function validateForm()
+{
+var radio_buttons = document.forms["issue_description"]["issues[]"];
+var checked = false;
+for (i=0; i<radio_buttons.length; i++){
+	if (radio_buttons[i].checked == true){
+		checked = true;
+		break;
+	}
+}
+if (!checked)
+  {
+  alert("you must select specify the reason for your answer");
+  return false;
+  }
+
+}
+</script>
+
+
+<form name = "issue_description" action="finish" onsubmit = "return validateForm()" method="post">
 <center><h1>SPECIFY THE REASON FOR YOUR ANSWER</h1></center>
 
 <center><table>

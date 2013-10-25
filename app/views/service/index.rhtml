@@ -1,4 +1,24 @@
-<form action="/service/create_variables" method="post">
+<script>
+function validateForm()
+{
+var radio_buttons = document.forms["index"]["service"];
+var checked = false;
+for (i=0; i<radio_buttons.length; i++){
+	if (radio_buttons[i].checked == true){
+		checked = true;
+		break;
+	}
+}
+if (!checked)
+  {
+  alert("you must select your favorite answer");
+  return false;
+  }
+
+}
+</script>
+
+<form name = "index" action="/service/create_variables" onsubmit="return validateForm()"  method="post">
 <center><h1>CHOSE A SERVICE</h1></center>
 
 <center><table>
