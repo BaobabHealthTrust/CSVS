@@ -12,28 +12,31 @@ class VoteController < ApplicationController
 	end
 
 	def store_vote_type
-         
+        client_id = params[:client_id]
 		service_type = params[:service_type]
-		redirect_to :controller=>"Vote", :action=>"issue_description", :service_type => service_type,
-			:vote_type => params[:answers]
+		redirect_to :controller=>"Vote", :action=>"issue_description", :client_id => client_id, 
+           :service_type => service_type,:vote_type => params[:answers]
 	end
 
 	def finish
-    #session[:issues_select] = params[:issues]
-	issues = params[:issues]
-	vote_type = params[:vote_type]
+    
+    client_id = params[:client_id]
+    vote_type = params[:vote_type]
 	service_type = params[:service_type]
+	issues = params[:issues]
+	
  	redirect_to :controller=>"Vote", :action=>"save_vote", :issues => issues, :vote_type => vote_type,
-		:service_type => service_type
+		:service_type => service_type, :client_id => client_id
 	end
 
     def save_vote
 		
         issues = params[:issues]
-		#raise params.to_yaml
-		vote = Vote.new
 		
-		vote.client_id =  "7dvs" #the value  is a testing static value which should be replaced by a hashed string from client
+		vote = Vote.new
+       
+		
+		vote.client_id =  params[:client_id] 
 			
 			
         vote.vote_type_id =  VoteType.find_by_name(params[:vote_type]).id

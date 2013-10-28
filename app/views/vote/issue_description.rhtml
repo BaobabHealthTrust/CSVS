@@ -32,6 +32,7 @@ if (!checked)
 		<td><h2><input type="checkbox" name="issues[]" value="<%= issue.name %>"><%= issue.name %></input></h2></td>
 	</tr>
 <% end %></table>
+<%= hidden_field_tag("client_id", params[:client_id])%>
 <%= hidden_field_tag("service_type", params[:service_type])%>
 <%= hidden_field_tag("vote_type", params[:vote_type])%>
 <input type="submit" value="Submit"/>

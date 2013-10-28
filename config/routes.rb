@@ -13,9 +13,12 @@ CSVS::Application.routes.draw do
 
   resources :services
 
-	
+ # get "service/service_list"
+  get "service/keep_barcode"
   get "service/new"
   post "service/create"
+  get "service/service_list"
+  post "service/service_list"
   get "service/index"
   get "Vote/question"
   get "voteType/new"
@@ -29,6 +32,7 @@ CSVS::Application.routes.draw do
   post "Vote/question"
   post  "Vote/finish"
   get	"Vote/save_vote"
+  post "service/keep_barcode"
   #map.service '/service', :controller => 'Vote', :action => 'location'
   #map.Vote '/Vote', :controller => 'Vote', :action => 'store_vote_type'
   #map.Vote '/Vote', :controller => 'Vote', :action => 'issue_description'

@@ -1,7 +1,21 @@
 class ServiceController < ApplicationController 
 
 	def index
-		@service = Service.all.delete_if{|service|service.name.blank?}
+		
+	end
+
+	def keep_barcode
+	
+	
+	  clientId= Digest::SHA1.hexdigest(params[:bcode])
+	
+   
+	redirect_to :controller=>"service", :action=>"service_list", :client_id => clientId
+	end
+
+	def service_list
+	
+     @service = Service.all.delete_if{|service|service.name.blank?}
 	end
 
 	def new
@@ -35,8 +49,8 @@ class ServiceController < ApplicationController
 
 	def create_variables
 		#session[:service_type] = params[:service]
-   		
-			redirect_to :controller=>"Vote", :action=>"question", :service_type => params[:service]
+   		    client_id = params[:client_id]
+		redirect_to :controller=>"Vote", :action=>"question",:client_id => client_id, :service_type => params[:service]
 		 end
 	end
 
