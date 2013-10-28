@@ -20,7 +20,10 @@ if (x==null || x=="")
 <strong>BARCODE</strong> <input type="text" size="20" name="bcode"></br>
 
 <input type="submit" value="Submit"/>
-</p>
+ <% if flash[:notice] %>
+<B><div id="notice" ><%= flash[:notice] %></div></B>
+<% end -%>
+
 
 </form>
 </table>

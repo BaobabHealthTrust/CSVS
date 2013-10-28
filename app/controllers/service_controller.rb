@@ -8,9 +8,18 @@ class ServiceController < ApplicationController
 	
 	
 	  clientId= Digest::SHA1.hexdigest(params[:bcode])
-	
-   
-	redirect_to :controller=>"service", :action=>"service_list", :client_id => clientId
+       
+      validate_time = Vote.where(["client_id =? AND created_at >= ?", clientId, Time.now - 2.hour])
+
+   	   if !(validate_time.blank?)
+
+				    flash[:notice] = "you have already voted."
+					redirect_to :controller=>"service", :action=>"index"
+	     else
+	      			redirect_to :controller=>"service", :action=>"service_list", :client_id => clientId
+       end
+
+
 	end
 
 	def service_list

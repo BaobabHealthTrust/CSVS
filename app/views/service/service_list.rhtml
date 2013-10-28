@@ -1,0 +1,41 @@
+<script>
+function validateForm()
+{
+var radio_buttons = document.forms["index"]["service"];
+var checked = false;
+for (i=0; i<radio_buttons.length; i++){
+	if (radio_buttons[i].checked == true){
+		checked = true;
+		break;
+	}
+}
+if (!checked)
+  {
+  alert("you must select your favorite answer");
+  return false;
+  }
+
+}
+</script>
+
+<form name = "service_list" action="/service/create_variables" onsubmit="return validateForm()"  method="post">
+<center><h1>CHOSE A SERVICE</h1></center>
+
+<center><table>
+<tr>
+	<td></td>
+</tr>
+<% @service.each do |service|%>
+	<tr>
+		<td>
+			<h2><input type="radio" name="service" value="<%= service.name %>">
+					<%= service.name %>
+				</input>
+			</h2>
+	   </td>
+
+	</tr>
+<% end %></table>
+<%= hidden_field_tag("client_id", params[:client_id])%>
+<input type="submit" value="Submit"/>
+</form>
