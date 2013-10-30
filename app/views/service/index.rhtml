@@ -1,24 +1,21 @@
 <html>
-		<script type="text/javascript" language="javascript" src="/touchscreentoolkit/lib/javascripts/touchScreenToolkit.js" defer  ></script>
-		<script type="text/javascript" language="javascript" src="/touchscreentoolkit/lib/javascripts/dashboard.js" defer  ></script>
-	 <body id="content">
-
-
+	<head>
+    <%= javascript_include_tag "barcode" %>
+	</head>
 		
+	 <body>
 
-<form name = "index" method = post action ="/service/keep_barcode" onsubmit="return validateForm()">
-<p>
-
-<strong>BARCODE</strong> <input name = "barcode" tt_pageStyleClass = "barcode NoKeyboard" type="text" size="20" name="bcode"></br>
-
-<input type="submit" value="Submit"/>
- <% if flash[:notice] %>
-<B><div id="notice" ><%= flash[:notice] %></div></B>
-<% end -%>
+       <form id = "barcodeForm"  method = "post" action ="/service/keep_barcode" >
 
 
-</form>
-</table>
-</body>
+		   <strong>BARCODE</strong>	
+			 <input name = "barcode" id = "barcode" class = "touchscreenTextInput"  type="text"
+			 style = "position: absolute">
+
+			<input type="submit" value="Submit" style = "display:none"/>
+ 			
+	 </form>
+   
+	</body>
 </html>
 

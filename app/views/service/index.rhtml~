@@ -1,20 +1,28 @@
-<form action="create_variables" method="post">
-<center><h1>CHOSE A SERVICE</h1></center>
+<html>
+	<head>
+    <%= javascript_include_tag "barcode" %>
+	</head>
+		
+	 <body>
 
-<center><table>
-<tr>
-	<td></td>
-</tr>
-<% @service.each do |service|%>
-	<tr>
-		<td>
-			<h2><input type="radio" name="service" value="<%= service.name %>">
-					<%= service.name %>
-				</input>
-			</h2>
-	   </td>
+       <!--<form id = "barcodeForm"  method = "post" action ="/service/keep_barcode" >
 
-	</tr>
-<% end %></table>
-<input type="submit" value="Submit"/>
-</form>
+
+		   <strong>BARCODE</strong>	
+			 <input name = "barcode" id = "barcode" class = "touchscreenTextInput"  type="text"
+			 style = "position: absolute">
+
+			<input type="submit" value="Submit" style = "display:none"/>
+ 			
+	 </form>-->
+
+<form id='barcodeForm' action="/service/keep_barcode" method="post">
+
+            <%= text_field_tag :identifier, '', {:id => 'barcode', :class => 'touchscreenTextInput', :style => 'position:absolute;width:230px' } %>
+            <%= submit_tag "Submit"%>
+          </form>
+
+   
+	</body>
+</html>
+

@@ -1,70 +1,15 @@
-<html>
-<script type="text/javascript" language="javascript" src="lib/javascripts/touchScreenToolkit.js" defer  ></script>
-<script type="text/javascript" language="javascript" src="lib/javascripts/nested_select.js" defer  ></script>
-        <meta http-equiv='content-type' content='text/html;charset=UTF-8' />
-        <script language="javascript">
-            tstUsername = "";
-            tstCurrentDate = "2010/03/12";
-            tt_cancel_destination = '../home.html';
-            tt_cancel_show = 'show.html';
-            
-            function __$(id){
-                return document.getElementById(id);
-            }
 
-        </script>
-        <style type="text/css">
-            button {
-                width: 200px;
-                padding: 10px;
-            }
-            div {
-                font-size: 32px;
-                -moz-user-select: none;
-            }
-            .multi {
-                height: 150px;
-            }
-            .selectContent {
-                height: 450px;
-                width: 600px;
-                border: 1px solid #000;
-                padding: 10px;
-            }
-        </style>
-    </head>
-    <body><div id='content'>
-            <div id='description' style='color:#777;position:absolute;margin-top:-70px;'></div><center>
-                <form  action='' method="post">
-                    <table cellpadding=10>
-                        <tr>
-                            <th colspan=2>Nested Select</th>
-                            <td rowspan="5">
-                                <div id="interpreter" style="min-width: 600px; border-radius: 30px;
-                                     border: 1px solid #ccc; height: 650px; padding: 20px; overflow: auto;">
-                                    &nbsp;
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                                
-                                                                       
-                                </button>
-                            </td>
-                            <td style="width: 350px;">
-                                <select style='width: 100%' name='service' id='nsingle'
-                                        helptext='Normal Single Select'>
-                                    <option></option>
-                                    <% @service.each do |service|%><
-                                    <option><%= service.name %></option>
+
+ <form action = "/service/create_variables" method = "post" >
+                  <!--<select >
+                     <option></option>
+                              <% @service.each do |service|%><
+                                    <option name = "service"><%#= service.name %></option>
 									<% end %>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button onclick="__$('interpreter').innerHTML = ''; nested_select('nmulti', 'interpreter'); return false;">
+                         </select>-->
+<%= select_tag("service", options_for_select(@service.collect{|service|service.name}), {:helpText => "Select Service"})%>
+                           
+                 
 
 
 <%= hidden_field_tag("client_id", params[:client_id])%>

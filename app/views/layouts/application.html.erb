@@ -2,13 +2,22 @@
 <html>
 <head>
   <title>CSVS</title>
+<script type="text/javascript" language="javascript" src="/touchscreentoolkit/lib/javascripts/touchScreenToolkit.js" defer  ></script>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div id = "container">
+		<div id = "content">
+			<div id="description" style="color: #777; position: absolute; margin-top: -70px">
+			
+			<% if flash[:notice] %>
+			<B><div id="notice" ><%= flash[:notice] %></div></B>
+			<% end -%>
+			<%= yield %>
+		</div>
+	</div>
+</div>
 </body>
 </html>

@@ -1,37 +1,16 @@
-<script>
-function validateForm()
-{
-var radio_buttons = document.forms["question"]["answers"];
-var checked = false;
-for (i=0; i<radio_buttons.length; i++){
-	if (radio_buttons[i].checked == true){
-		checked = true;
-		break;
-	}
-}
-if (!checked)
-  {
-  alert("you must select your favorite answer");
-  return false;
-  }
-
-}
-</script>
 
 
 
-<form name = "question" action="store_vote_type" onsubmit="return validateForm()" method="post">
-<center><h1>ARE YOU SATISFIES WITH THE SERVICE YOU HAVE JUST RECEIVED?</h1></center>
+<form name = "question" action="store_vote_type" method="post">
 
-<center><table>
-<tr>
-	<td></td>
-</tr>
-<% @voteType.each do |voteType|%>
-	<tr>
-		<td><h2><input type="radio" name="answers" value="<%= voteType.name %>"><%= voteType.name %></input></h2></td>
-	</tr>
-<% end %></table>
+<%# @voteType.each do |voteType|%>
+	
+		<!--<input type="radio" name="answers" value="<%#= voteType.name %>"><%#= voteType.name %></input>-->
+
+	
+<% #end %>
+
+<%= select_tag("answers", options_for_select(@voteType.collect{|voteType|voteType.name}), {:helpText => "Are you satisfied with the service?"})%>
 <%= hidden_field_tag("client_id", params[:client_id])%>
 <%= hidden_field_tag("service_type", params[:service_type])%>
 

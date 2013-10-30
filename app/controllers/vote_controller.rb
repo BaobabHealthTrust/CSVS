@@ -19,11 +19,10 @@ class VoteController < ApplicationController
 	end
 
 	def finish
-    
     client_id = params[:client_id]
     vote_type = params[:vote_type]
 	service_type = params[:service_type]
-	issues = params[:issues]
+	issues = params[:issue]
 	
  	redirect_to :controller=>"Vote", :action=>"save_vote", :issues => issues, :vote_type => vote_type,
 		:service_type => service_type, :client_id => client_id
