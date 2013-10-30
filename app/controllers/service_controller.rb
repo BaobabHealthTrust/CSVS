@@ -7,7 +7,7 @@ class ServiceController < ApplicationController
 	def keep_barcode
 	
 	
-	  clientId= Digest::SHA1.hexdigest(params[:bcode])
+	  clientId= Digest::SHA1.hexdigest(params[:barcode])
        
       validate_time = Vote.where(["client_id =? AND created_at >= ?", clientId, Time.now - 2.hour])
 
