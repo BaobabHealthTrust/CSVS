@@ -1,21 +1,8 @@
-<html>
-	<head>
-    <%= javascript_include_tag "barcode" %>
-	</head>
-		
-	 <body>
-
-       <form id = "barcodeForm"  method = "post" action ="/service/keep_barcode" >
 
 
-		   <strong>BARCODE</strong>	
-			 <input name = "barcode" id = "barcode" class = "touchscreenTextInput"  type="text"
-			 style = "position: absolute">
-
-			<input type="submit" value="Submit" style = "display:none"/>
- 			
-	 </form>
-   
-	</body>
-</html>
-
+<form id='barcodeForm' action="/service/keep_barcode">
+            
+          
+          <%= text_field_tag :barcode, '', {:id => 'barcode', :class => 'touchscreenTextInput', :style => 					'position:absolute' } %>
+          <%= submit_tag "Submit", :style => "display:none" %>
+</form>

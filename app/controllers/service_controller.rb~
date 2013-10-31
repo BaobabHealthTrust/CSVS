@@ -1,7 +1,7 @@
 class ServiceController < ApplicationController 
 
 	def index
-		
+		render :template => 'service/index', :layout => 'barcode'
 	end
 
 	def keep_barcode

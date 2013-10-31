@@ -1,20 +1,23 @@
 class ReportController < ApplicationController
+	
+	 def show
+	  @service = Service.all.delete_if{|service|service.name.blank?}
+		render :get_report_specs
+	 end
+   
+     def get_report_specs
 
-   def show_dept
-
-	@service = Service.all.delete_if{|service|service.name.blank?}
+	   @service = Service.all.delete_if{|service|service.name.blank?}
               
-   end
+     end
   
-  def get_report
- # raise params.to_yaml
-	 @dept = params[:dept]
-     dept = Service.find_by_name(params[:dept]).id
-     period = params[:period]
+      def display_report
+
+		 @dept = params[:dept]	
+   		 dept = Service.find_by_name(params[:dept]).id
+    	 period = params[:period]
 	 
-		
-		
-		case period
+		 case period
 			when "DAY"
 			@total 		   = Vote.where(["service_id=? AND created_at >=?",dept,Time.now-1.day]).count
            
@@ -24,7 +27,7 @@ class ReportController < ApplicationController
 			@abit          =Vote.where(["service_id=? AND created_at >=? AND vote_type_id=?",dept,Time.now- 											1.day,20]).count 
 			@notsat        =Vote.where(["service_id=? AND created_at >=? AND vote_type_id=?",dept,Time.now- 			
 								1.day,21]).count 
-		  when "WEEK"
+		 when "WEEK"
 			@total 		   = Vote.where(["service_id=? AND created_at >=?",dept,Time.now-7.day]).count			
 			
 			@fullysatified =Vote.where(["service_id=? AND created_at >=? AND vote_type_id=?",dept,Time.now- 											7.day,17]).count 
@@ -55,4 +58,7 @@ class ReportController < ApplicationController
 		
 
 	end
+
+	
+	
 end
