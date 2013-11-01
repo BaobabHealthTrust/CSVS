@@ -1,0 +1,20 @@
+<script>
+tstCurrentDate = "<%= Time.now.strftime('%Y-%m-%d')%>"
+</script>
+
+<form method = "post" action = "/report/get_report_specs">
+   
+ <%= select_tag("service", options_for_select(@service.collect{|service|service.name}), 
+			    {:helpText => "Select Service"})%>
+		
+    <%= text_field_tag ("start_date", nil,                            
+      {:id => "start_date",                                                   
+       :field_type => 'date',
+       :helpText => "Select start date"} )%>
+ 
+  <%= text_field_tag ("end_date", nil,                            
+      {:id => "end_date",                                                   
+       :field_type => 'date',
+       :helpText => "Select end date"} )%>
+ 
+</form>

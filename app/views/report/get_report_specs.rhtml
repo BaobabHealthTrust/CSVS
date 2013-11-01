@@ -1,20 +1,11 @@
+h1>SERVICE STATISTICS</h1>
+		<h2>CLIENT SATISFACTION VOTING SYSTEM REPORT</h2>
+		
+	   <h2>SERVICE NAME: <%=@service%></h2>
+        <li><tr><h3>TOTAL: <%=@total%></tr></h2></li>
+        <li><tr>FULLY SATISFIED:</tr><tr><%= @fullysatisfied %></tr></li>
+        <li>SATISFIED: <%=@satisfied%></li>
+        <li>AT LEAST SATISFIED:<%=@atleast%></li>
+        <li>A BIT SATISFIED:<%=@abit %></li>
+        <li>NOT SATISFIED:<%=@notsat%></li>
 
-<form action="/report/display_report"   method="post">
-	<h1>REPORT FOR DEPARTMENT</h1>
- 		<%= select_tag("dept", options_for_select(@service.collect{|service|service.name}), {:helpText => "Chose a 						Service"})%>
-				  <table cellpadding=7>
-						<p><B>Select period</B></p>
-						   <td style="width: 350px; height: 10px;">
-                                <select style='width: 100%' name='period' 
-                                        helptext='Chose report duration'>
-                                  
-                                    <option>DAY</option>
-                                    <option>WEEK</option>
-                                    <option>MONTH</option>
-                                    <option>YEAR</option>
-                                 </select>
-							</td>
-					</table>
-
-	<p><input type="submit" value="Submit"/></p>
-</form>
