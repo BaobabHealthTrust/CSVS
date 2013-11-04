@@ -8,8 +8,7 @@ gem 'rails', '3.0.9'
 gem 'mysql2', '~> 0.2.6'
 
 gem 'composite_primary_keys'
-
-# Use unicorn as the web server
+#Use unicorn as the web server
 # gem 'unicorn'
 
 # Deploy with Capistrano

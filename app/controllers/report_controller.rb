@@ -1,10 +1,25 @@
 class ReportController < ApplicationController
-	
+    layout 'application'
+      def index
+          
+	  end
+
+	  def chose_time_range
+		
+	  end
+
+
 	 def show
+     
 	  @service = Service.all.delete_if{|service|service.name.blank?}
-		render :choose_report
+	    
+		render :action => "chose_time_range"  
+		
+        
+		
 	 end
-   
+	
+	
      def get_report_specs
 
 		@service=params[:service]
@@ -30,5 +45,13 @@ class ReportController < ApplicationController
 										service,start_date,end_date,abit_id]).count
 	    @notsat= Vote.where(["service_id=? AND DATE(created_at)>=? AND Date(created_at)<=? AND vote_type_id=?",
 										service,start_date,end_date,unsat_id]).count
-	     end	
-end
+         #issues issues
+		
+		#@badfood    =
+		#@notsecure  =
+		#@harshnurse =
+
+
+
+	  end	
+end 

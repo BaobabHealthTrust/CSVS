@@ -1,5 +1,8 @@
 CSVS::Application.routes.draw do
  
+
+  resources :users
+
  root :to => "service#index"
  resources :vote_types
 
@@ -39,7 +42,19 @@ CSVS::Application.routes.draw do
   get "report/display_report"
   post "report/display_report"
   post "report/get_report_specs"
+  get "report/overview"
+  post "admin/authenticate"
   
+  post "report/chose_time_range"
+
+  get "admin/index"
+
+  get "admin/login"
+
+  get "admin/menu"
+
+  get "admin/logout"
+
   #map.service '/service', :controller => 'Vote', :action => 'location'
   #map.Vote '/Vote', :controller => 'Vote', :action => 'store_vote_type'
   #map.Vote '/Vote', :controller => 'Vote', :action => 'issue_description'

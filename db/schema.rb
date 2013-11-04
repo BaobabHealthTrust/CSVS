@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131021102913) do
+ActiveRecord::Schema.define(:version => 20131102131945) do
 
   create_table "issues", :primary_key => "issue_id", :force => true do |t|
     t.string   "name"
@@ -20,6 +20,17 @@ ActiveRecord::Schema.define(:version => 20131021102913) do
 
   create_table "services", :primary_key => "service_id", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "username",        :default => "",  :null => false
+    t.string   "hashed_password", :default => "",  :null => false
+    t.string   "first_name",      :default => "",  :null => false
+    t.string   "last_name",       :default => "",  :null => false
+    t.string   "display_name",    :default => "",  :null => false
+    t.string   "user_level",      :default => "0", :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

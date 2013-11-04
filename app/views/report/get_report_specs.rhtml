@@ -1,6 +1,11 @@
-h1>SERVICE STATISTICS</h1>
-		<h2>CLIENT SATISFACTION VOTING SYSTEM REPORT</h2>
+<h1>SERVICE STATISTICS</h1><br/><br/>
 		
+<h2>CLIENT SATISFACTION VOTING SYSTEM REPORT</h2>
+	
+<div id= body>
+
+
+    <table>	
 	   <h2>SERVICE NAME: <%=@service%></h2>
         <li><tr><h3>TOTAL: <%=@total%></tr></h2></li>
         <li><tr>FULLY SATISFIED:</tr><tr><%= @fullysatisfied %></tr></li>
@@ -8,4 +13,5 @@ h1>SERVICE STATISTICS</h1>
         <li>AT LEAST SATISFIED:<%=@atleast%></li>
         <li>A BIT SATISFIED:<%=@abit %></li>
         <li>NOT SATISFIED:<%=@notsat%></li>
-
+    </table>
+</div>
