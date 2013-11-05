@@ -52,16 +52,11 @@ class AdminController < ApplicationController
 							DateTime.now.beginning_of_year,DateTime.now]).count
     @yns = Vote.where(["vote_type_id =? AND created_at>=? AND created_at<=?" ,unsat_id,
 							DateTime.now.beginning_of_year,DateTime.now]).count
-   
-	
-	
-
-	
-    
-	render :layout => 'report'
+   render :layout => 'report'
   end
 
-  def logout
+  def admin_opt
+   render :layout => 'report'
   end
  
   def authenticate

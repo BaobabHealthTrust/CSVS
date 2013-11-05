@@ -1,11 +1,20 @@
 <script>
 tstCurrentDate = "<%= Time.now.strftime('%Y-%m-%d')%>"
+tt_cancel_destination = '/admin/menu';
+tt_cancel_show = '';
 </script>
+
+<style>
+	li{
+		font-size: 20px;
+	}
+</style>
 
 <form method = "post" action = "/report/get_report_specs">
    
  <%= select_tag("service", options_for_select(@service.collect{|service|service.name}), 
-			    {:helpText => "Select Service"})%>
+			    {:helpText => "Select Service",
+				  :tt_pageStyleClass =>" NoKeyboard"})%>
 		
     <%= text_field_tag ("start_date", nil,                            
       {:id => "start_date",                                                   

@@ -1,5 +1,8 @@
-
-
+  <% if !flash[:notice].blank? %>
+	<script>
+		alert('<%= "#{flash[:notice]}" %>');
+	</script>
+<%end %>
 <form id='barcodeForm' action="/service/keep_barcode">
             
           

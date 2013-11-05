@@ -1,5 +1,8 @@
-
-
+		<script>
+            
+            tt_cancel_destination = '/service/index';
+            tt_cancel_show = '';
+        </script>
 
 <form name = "issue_description" action="finish"  method="post">
 
@@ -7,7 +10,8 @@
 
 <%= select_tag("issue[]", options_for_select(@issue.collect{|issue|issue.name}), {
 	:helpText => "Specify the reason for your answer",
-	:multiple => "multiple"})%>
+	 :multiple => "true",
+	 :tt_pageStyleClass =>" NoKeyboard longSelectList"})%>
 
 <%= hidden_field_tag("client_id", params[:client_id])%>
 <%= hidden_field_tag("service_type", params[:service_type])%>

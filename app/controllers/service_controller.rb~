@@ -1,7 +1,7 @@
 class ServiceController < ApplicationController 
 
 	def index
-		render :template => 'service/index', :layout => 'barcode'
+		render :layout => 'barcode'
 	end
 
 	def keep_barcode
@@ -13,7 +13,7 @@ class ServiceController < ApplicationController
 
    	   if !(validate_time.blank?)
 
-				    flash[:notice] = "you have already voted."
+				    flash[:notice] = "you have already voted.Thank you"
 					redirect_to :controller=>"service", :action=>"index"
 	     else
 	      			redirect_to :controller=>"service", :action=>"service_list", :client_id => clientId
@@ -57,7 +57,7 @@ class ServiceController < ApplicationController
 	end
 
 	def create_variables
-		#session[:service_type] = params[:service]
+		
    		    client_id = params[:client_id]
 		redirect_to :controller=>"Vote", :action=>"question",:client_id => client_id, :service_type => params[:service]
 		 end

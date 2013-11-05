@@ -51,7 +51,7 @@ class ReportController < ApplicationController
 		#@notsecure  =
 		#@harshnurse =
 
-
+       render :layout => 'report'
 
 	  end	
 end 

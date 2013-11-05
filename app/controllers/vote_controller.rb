@@ -67,7 +67,7 @@ class VoteController < ApplicationController
 				vote_issue.save
 
 			end	if !issues.nil?
-
+            flash[:notice] = "Thank you for your Voting, bye"
 			redirect_to :controller=>"service", :action=>"index"
         #if the save then give a thanks massage then redirect to welcome page.
         else

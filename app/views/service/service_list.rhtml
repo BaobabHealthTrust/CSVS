@@ -1,13 +1,14 @@
-
+<script>
+           
+            tt_cancel_destination = '/service/index';
+            tt_cancel_show = '';
+        </script>
 
  <form action = "/service/create_variables" method = "post" >
-                  <!--<select >
-                     <option></option>
-                              <% @service.each do |service|%><
-                                    <option name = "service"><%#= service.name %></option>
-									<% end %>
-                         </select>-->
-<%= select_tag("service", options_for_select(@service.collect{|service|service.name}), {:helpText => "Select Service"})%>
+                  
+<%= select_tag("service", options_for_select(@service.collect{|service|service.name}), 
+			{:helpText => "Select Service",
+			 :tt_pageStyleClass => "NoKeyboard"})%>
                            
                  
 

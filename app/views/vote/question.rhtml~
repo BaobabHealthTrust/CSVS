@@ -1,18 +1,24 @@
-
-
+<head>
+        <script>
+            tstUsername = "";
+            tt_cancel_destination = '/service/index';
+            tt_cancel_show = '';
+        </script>
+    </head>
+ <% if !flash[:notice].blank? %>
+	<script>
+		alert('<%= "#{flash[:notice]}" %>');
+	</script>
+<%end %>
 
 <form name = "question" action="store_vote_type" method="post">
-
-<%# @voteType.each do |voteType|%>
-	
-		<!--<input type="radio" name="answers" value="<%#= voteType.name %>"><%#= voteType.name %></input>-->
-
-	
-<% #end %>
-
-<%= select_tag("answers", options_for_select(@voteType.collect{|voteType|voteType.name}), {:helpText => "Are you satisfied with the service"})%>
-<%= hidden_field_tag("client_id", params[:client_id])%>
-<%= hidden_field_tag("service_type", params[:service_type])%>
+		<%= select_tag("answers", options_for_select(@voteType.collect{|voteType|voteType.name}),
+ 						{:helpText => "Are you satisfied with the service?",
+   						  :tt_pageStyleClass =>" NoKeyboard"})%>
+		<%= hidden_field_tag("client_id", params[:client_id])%>
+		<%= hidden_field_tag("service_type", params[:service_type])%>
 
 <input type="submit" value="Submit"/>
+
+
 </form>

@@ -53,7 +53,7 @@ CSVS::Application.routes.draw do
 
   get "admin/menu"
 
-  get "admin/logout"
+  get "admin/admin_opt"
 
   #map.service '/service', :controller => 'Vote', :action => 'location'
   #map.Vote '/Vote', :controller => 'Vote', :action => 'store_vote_type'
